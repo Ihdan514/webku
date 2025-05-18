@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login - AquaCake</title>
+  <title>Login - EcoVerse</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     .login-container {
@@ -12,20 +12,21 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background: linear-gradient(to top, #56ccf2, #2f80ed);
-      color: white;
+      background-color: #e9f5e9;
+      color: #2c5f2d;
+      font-family: 'Segoe UI', sans-serif;
     }
 
     .login-box {
-      background-color: #ffffff20;
+      background-color: #d0e8d0;
       padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0, 238, 255, 0.5);
+      border-radius: 10px;
+      box-shadow: 0 0 10px #4caf50;
     }
 
     .login-box h2 {
       margin-bottom: 20px;
-      color: white;
+      color: #2c5f2d;
     }
 
     .login-box input {
@@ -33,17 +34,17 @@
       margin: 10px 0;
       width: 100%;
       border-radius: 5px;
-      border: none;
+      border: 1px solid #4caf50;
     }
 
     .login-box button {
       padding: 10px;
-      background-color: #fff;
+      background-color: #4caf50;
       border: none;
       width: 100%;
+      color: white;
       font-weight: bold;
       border-radius: 5px;
-      color: #2f80ed;
       cursor: pointer;
     }
 
@@ -51,19 +52,19 @@
       display: block;
       text-align: center;
       margin-top: 15px;
-      color: white;
+      color: #2c5f2d;
       text-decoration: none;
     }
   </style>
 </head>
 <body>
   <div class="login-container">
-    <form class="login-box" onsubmit="event.preventDefault(); window.location.href='index.html';">
-      <h2>Masuk ke AquaCake</h2>
+    <form class="login-box" onsubmit="event.preventDefault(); window.location.href='index.html#beranda';">
+      <h2>Masuk ke EcoVerse</h2>
       <input type="text" placeholder="Nama Pengguna" required />
       <input type="password" placeholder="Kata Sandi" required />
       <button type="submit">Login</button>
-      <a href="index.html">← Kembali ke Beranda</a>
+      <a href="index.html#beranda">← Kembali ke Beranda</a>
     </form>
   </div>
 </body>
