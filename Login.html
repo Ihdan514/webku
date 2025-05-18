@@ -1,15 +1,65 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - ExploreIndo</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - AquaCake</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .login-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to top, #56ccf2, #2f80ed);
+      color: white;
+    }
+
+    .login-box {
+      background-color: #ffffff20;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 238, 255, 0.5);
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .login-box input {
+      padding: 10px;
+      margin: 10px 0;
+      width: 100%;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .login-box button {
+      padding: 10px;
+      background-color: #fff;
+      border: none;
+      width: 100%;
+      font-weight: bold;
+      border-radius: 5px;
+      color: #2f80ed;
+      cursor: pointer;
+    }
+
+    .login-box a {
+      display: block;
+      text-align: center;
+      margin-top: 15px;
+      color: white;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
   <div class="login-container">
     <form class="login-box" onsubmit="event.preventDefault(); window.location.href='index.html';">
-      <h2>Login ExploreIndo</h2>
+      <h2>Masuk ke AquaCake</h2>
       <input type="text" placeholder="Nama Pengguna" required />
       <input type="password" placeholder="Kata Sandi" required />
       <button type="submit">Login</button>
