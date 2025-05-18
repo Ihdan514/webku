@@ -2,25 +2,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e0f7fa;
+  color: #004d40;
 }
 
 nav {
-  background-color: #333;
-  padding: 1rem;
+  background: #00bcd4;
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 nav .logo {
-  color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.5em;
+  color: white;
   font-weight: bold;
 }
 
@@ -31,81 +34,83 @@ nav ul {
 }
 
 nav ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
   font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b;
 }
 
 .hero {
-  background-color: #007acc;
-  color: white;
-  padding: 60px 20px;
+  padding: 100px 20px;
   text-align: center;
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.8em;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 2px #000;
 }
 
 .hero .btn {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #fff;
-  color: #007acc;
-  border-radius: 5px;
+  background-color: #ffeb3b;
+  color: #006064;
+  padding: 12px 25px;
   text-decoration: none;
+  border-radius: 8px;
   font-weight: bold;
 }
 
 section {
-  padding: 40px 20px;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
   text-align: center;
+  margin-bottom: 30px;
+  color: #00796b;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-box {
+  background: #b2ebf2;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  color: #004d40;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.video-container, .map-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #222;
-  color: white;
-}
-
-/* Login Styles */
-.login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.login-box {
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  width: 300px;
-}
-
-.login-box h2 {
-  margin-bottom: 20px;
-}
-
-.login-box input {
-  display: block;
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 10px;
-}
-
-.login-box button {
-  background-color: #007acc;
-  color: white;
-  padding: 10px;
-  border: none;
-  width: 100%;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.login-box a {
-  display: block;
-  text-align: center;
-  margin-top: 10px;
-  text-decoration: none;
-  color: #007acc;
+  background: #00bcd4;
+  color: white; 
+  margin-top: 60px;
 }
